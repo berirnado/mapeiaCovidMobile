@@ -6,6 +6,8 @@ import { Entypo } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 
+import { useNavigation } from '@react-navigation/native';
+
 import logoImg from '../../assets/logo.png';
 
 import UserIcon from '../../assets/icones/003-user.svg'
@@ -16,6 +18,8 @@ import { TextInput, RectButton, TouchableWithoutFeedback } from 'react-native-ge
 
 
 function LogIn(){
+    const {navigate} = useNavigation();
+
     const [data, setData] = useState({
         email: '',
         password: '',
@@ -65,6 +69,10 @@ function LogIn(){
         })
     }
 
+    function handleNavigateToMapScreen(){
+        navigate('HomeTabs');
+    }
+
     return (
         <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={styles.container}>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -111,7 +119,7 @@ function LogIn(){
                             </TouchableWithoutFeedback>
                             <Text style={styles.saveDataText}>Salvar dados de login</Text>
                             </View>
-                    <RectButton style={styles.formButton}>
+                    <RectButton style={styles.formButton} onPress={() => handleNavigateToMapScreen()}>
                         <Text style={styles.buttonText}>ENTRAR</Text>
                     </RectButton>
                 </View>

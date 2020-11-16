@@ -26,7 +26,8 @@ function HomeTabs() {
                     shadowOpactity: 0,
                     height: 64,
                     position: 'absolute',
-                    borderRadius: 22,
+                    borderTopLeftRadius: 20,
+                    borderTopRightRadius: 20,
                 },
                 safeAreaInsets: {
                     bottom: 0,
