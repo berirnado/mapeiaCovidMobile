@@ -31,22 +31,54 @@ const styles = StyleSheet.create({
 
     },
     buttonContainer: {
-        marginTop: hp('5%'),
+        marginTop: hp('2%'),
         marginHorizontal: wp('5%'),
         height: hp('90%'),
     },
-    button: {
-        width: '45%',
-        height: '30%',
-        backgroundColor: '#00C4FC',
-        justifyContent: 'center',
-        borderRadius: 6,
+    buttonContainerRow: {
+        flexDirection: 'row',
+        marginBottom: hp('1.5%'),
+        height: '10%',
+        width: '100%',
+        justifyContent: 'space-between',
     },
-    buttonText: {
+    buttonContainerRowYesNo: {
+        flexDirection: 'row',
+        marginTop: hp('2%'),
+        marginBottom: hp('2%'),
+        height: '10%',
+        width: '100%',
+        justifyContent: 'space-between',
+    },
+    normalText: {
+        fontFamily: 'Archivo_400Regular',
+        fontSize: hp('2.5%'),
+        color: '#818f98',
+    },
+    boldText: {
         fontFamily: 'Archivo_700Bold',
-        color: '#ffff',
-        marginLeft: wp('4%'),
+        fontSize: hp('2.5%'),
+        color: '#818f98',
     },
+    confirmButton: {
+        width: '90%',
+        height: '10%',
+        borderRadius: 7,
+        backgroundColor: '#009cfa',
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center',
+        marginTop: hp('2%'),
+        marginBottom: hp('20%'),
+    },
+    confirmButtonText: {
+        fontFamily: 'Archivo_700Bold',
+        fontSize: hp('2.5%'),
+        color: '#ffff',
+    },
+    filler: {
+        height: hp('15%')
+    }
 })
 
 export default styles;
