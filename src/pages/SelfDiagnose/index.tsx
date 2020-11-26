@@ -11,14 +11,20 @@ import { AntDesign } from '@expo/vector-icons';
 
 import styles from './styles';
 import YesNoButton from '../../components/YesNoButton';
+import { useNavigation } from '@react-navigation/native';
 
 function SelfDiagnose() {
+    const { navigate } = useNavigation();
+
+    const handleNavigateBack = () => {
+        navigate('MapScreen')
+    }
     return (
         <View style={styles.container}>
             <StatusBar style="light" />
             <View style={styles.header}>
                 <View style={styles.backButton}>
-                    <RectButton>
+                    <RectButton onPress={handleNavigateBack}>
                         <AntDesign name="back" size={24} color="#ffff" />
                     </RectButton>
                 </View>

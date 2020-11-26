@@ -22,10 +22,11 @@ function HomeTabs() {
         <Navigator
             tabBarOptions={{
                 style: {
-                    elevation: 0,
-                    shadowOpactity: 0,
+                    shadowOpactity: 2,
                     height: 64,
                     position: 'absolute',
+                    borderWidth: 1,
+                    borderColor: '#e6e6e6',
                     borderTopLeftRadius: 20,
                     borderTopRightRadius: 20,
                 },

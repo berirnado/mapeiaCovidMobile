@@ -15,11 +15,11 @@ function AppStack() {
     return (
         <NavigationContainer>
             <Navigator screenOptions={{headerShown: false}}>
-                <Screen name="SelfDiagnose" component={SelfDiagnose} />
                 <Screen name="Landing" component={Landing} />
                 <Screen name="LogIn" component={LogIn} />
                 <Screen name="SignIn" component={SignIn} />
                 <Screen name="HomeTabs" component={HomeTabs} />
+                <Screen name="SelfDiagnose" component={SelfDiagnose} />
             </Navigator>
         </NavigationContainer>
     );
