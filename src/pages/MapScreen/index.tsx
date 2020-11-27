@@ -1,3 +1,4 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react'
 
 import { Image, Text, View } from 'react-native';
@@ -13,6 +14,7 @@ import styles from './styles';
 function MapScreen() {
     return (
         <View style={styles.container}>
+            <StatusBar style="dark" />
             <View style={styles.header}>
                 <View>
                     <Image source={logoCortada} style={styles.logoCortada}></Image>
