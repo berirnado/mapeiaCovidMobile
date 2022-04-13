@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from '@expo/vector-icons';
 
 import MapScreen from '../pages/MapScreen';
 import TipsScreen from '../pages/TipsScreen';
@@ -22,7 +21,7 @@ function HomeTabs() {
         <Navigator
             tabBarOptions={{
                 style: {
-                    shadowOpacity: 2,
+                    shadowOpacity: 0.5,
                     height: 64,
                     position: 'absolute',
                     borderWidth: 1,

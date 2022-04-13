@@ -21,18 +21,15 @@ const styles = StyleSheet.create({
     },
 
     textGoBack: {
-        fontFamily: 'Archivo_400Regular',
         color: '#a8a8a8',
     },
 
     textSecondary:{
-        fontFamily: 'Archivo_400Regular',
         textAlign: 'center',
         color: '#a8a8a8',
     },
 
     textLink: {
-        fontFamily: 'Archivo_400Regular',
         textAlign: 'center',
         color: '#00c4fc',
     },
@@ -49,7 +46,6 @@ const styles = StyleSheet.create({
     },
 
     pageTitle: {
-        fontFamily: 'Archivo_700Bold',
         fontSize: 23,
         marginBottom: 10,
         marginTop: -35,
@@ -126,7 +122,6 @@ const styles = StyleSheet.create({
     },
 
     buttonText: {
-        fontFamily: 'Archivo_700Bold',
         color: 'white',
         fontSize: 20,
         alignSelf: 'center',

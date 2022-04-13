@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import * as Location from 'expo-location';
 
 import { View, Text, Image, ScrollView } from 'react-native';
 
@@ -20,12 +21,39 @@ import { RadioButton } from 'react-native-paper';
 function SignIn(){
     const { navigate } = useNavigation();
 
+    const [coords, setCoords] = useState({
+        latitude: '',
+        longitude: '',
+    })
+    const [longitude, setLongitude] = useState(String)
+    const [errorMsg, setErrorMsg] = useState(String);
+
+    useEffect(() => {
+        (async () => {
+        let { status } = await Location.requestForegroundPermissionsAsync();
+        if (status !== 'granted') {
+            setErrorMsg('Permission to access location was denied');
+            return;
+        }
+
+        let location = await Location.getCurrentPositionAsync({});
+        console.log(JSON.stringify(location.coords.latitude))
+        console.log(JSON.stringify(location.coords.longitude))
+        setCoords({
+            ...coords,
+            latitude: JSON.stringify(location.coords.latitude),
+            longitude: JSON.stringify(location.coords.longitude),
+        })
+        })();
+    }, []);
+
     const [radioValue, setRadioValue] = React.useState('');
 
     const [data, setData] = useState({
         phone: '',
         birthday: '',
-        address: '',
+        latitude: '',
+        longitude: '',
         genderValue: '',
         termsConfirm: false, 
     })
@@ -36,6 +64,8 @@ function SignIn(){
         setData({
             ...data,
             termsConfirm: termsStateToggle,
+            latitude: coords.latitude,
+            longitude: coords.longitude
         })
     }
 
@@ -57,13 +87,6 @@ function SignIn(){
         setData({
             ...data,
             birthday: val,
-        })
-    }
-
-    const addressInputChange = (val: string) => {
-        setData({
-            ...data,
-            address: val,
         })
     }
 
@@ -97,7 +120,10 @@ function SignIn(){
                 headers: {'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             };
-            fetch('http://192.168.0.8:8080/auth/signup', reqOptions)
+            console.log(data)
+            console.log(data.longitude)
+            console.log(data.latitude)
+            fetch('http://192.168.1.106:8080/auth/signup', reqOptions)
             .then(res => {
                 if(res.status == 201) {
                     console.log(JSON.stringify(res))
@@ -147,15 +173,6 @@ function SignIn(){
                                 placeholder="Data de Nascimento" 
                                 placeholderTextColor="#9a9a9a"
                                 onChangeText={(val) =>birthdayInputChange(val)} 
-                                style={styles.textInput}
-                            />
-                        </View>
-                        <View style={[styles.inputBlock, styles.passInputBlock]}>
-                            <EnderecoIcon height={20} width={20} fill={'black'} style={styles.formIcons} />
-                            <TextInput 
-                                placeholder="Endereço Completo" 
-                                placeholderTextColor="#9a9a9a"
-                                onChangeText={(val) =>addressInputChange(val)} 
                                 style={styles.textInput}
                             />
                         </View>

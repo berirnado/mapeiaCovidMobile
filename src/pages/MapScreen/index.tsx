@@ -1,6 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState, useEffect } from 'react'
-import * as Permissions from 'expo-permissions';
 import * as Location from 'expo-location';
 
 import { Image, Text, View } from 'react-native';
