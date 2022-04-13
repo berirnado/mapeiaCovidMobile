@@ -51,7 +51,6 @@ const styles = StyleSheet.create({
     },
 
     buttonText: {
-        fontFamily: 'Archivo_700Bold',
         fontSize: 20,
         color: '#fff',
         textAlign: 'center',

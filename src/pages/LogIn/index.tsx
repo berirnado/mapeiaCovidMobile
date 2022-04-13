@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { SecureStore } from 'expo';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { View, Text, Image, Keyboard, KeyboardAvoidingView, Platform, Alert } from 'react-native';
@@ -70,20 +69,18 @@ function LogIn(){
                 headers: {'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             };
-            fetch('http://192.168.0.8:8080/auth/login', reqOptions)
+            fetch('http://192.168.1.106:8080/auth/login', reqOptions)
             .then(res => {
-                if(res.status == 201) {
+                if(res.status == 200) {
                     res.json()
                         .then(data => {
                             storeData(data.token)
                             handleNavigateToLoginSuccess()
                         })
                         .catch(err => console.log(err)) 
-                    //SecureStore.setItemAsync('secure_token',res.token)
-                    handleNavigateToLoginSuccess()
                 }
                 else{
-                    alert('Problema na hora de criar usuário')
+                    alert('Problema na hora de logar')
                 }
             })
         }

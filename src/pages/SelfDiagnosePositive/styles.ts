@@ -24,21 +24,18 @@ const styles = StyleSheet.create({
     headerText: {
         marginLeft: wp('15%'),
         width: '100%',
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('4%'),
         color: '#ffff'
     },
     headerText2: {
         marginLeft: wp('-2%'),
         width: '100%',
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('4%'),
         color: '#ffff'
     },
     headerTextBold: {
         marginTop: hp('2%'),
         width: '100%',
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('3.5%'),
         color: '#ffff'
     },
@@ -46,7 +43,6 @@ const styles = StyleSheet.create({
         marginLeft: wp('2%'),
         marginTop: hp('2%'),
         width: '100%',
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('4%'),
         color: '#ffff'
     },
@@ -64,12 +60,10 @@ const styles = StyleSheet.create({
         marginTop: hp('4%'),
     },
     normalText: {
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('3.1%'),
         color: '#737373',
     },
     boldText: {
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('3.1%'),
         color: '#595959',
     },
@@ -98,7 +92,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     boldTextRed: {
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('3.1%'),
         color: '#f30145',
     },

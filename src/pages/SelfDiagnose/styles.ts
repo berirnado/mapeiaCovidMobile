@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
         marginTop: hp('6.5%'),
         marginLeft: wp('-2.5%'),
         width: '55%',
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('5%'),
         color: '#ffff'
     },
@@ -51,12 +50,10 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     normalText: {
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('2.5%'),
         color: '#818f98',
     },
     boldText: {
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('2.5%'),
         color: '#818f98',
     },
@@ -72,7 +69,6 @@ const styles = StyleSheet.create({
         marginBottom: hp('20%'),
     },
     confirmButtonText: {
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('2.5%'),
         color: '#ffff',
     },

@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
     },
     title: {
-        fontFamily: 'Archivo_400Regular',
         marginTop: -20,
         fontSize: 13,
         color: '#9c9c9c',
@@ -47,7 +46,6 @@ const styles = StyleSheet.create({
     },
 
     buttonText: {
-        fontFamily: 'Archivo_700Bold',
         fontSize: 20,
         color: '#fff',
         textAlign: 'center',

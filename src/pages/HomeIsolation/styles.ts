@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
     },
     titleText: {
         justifyContent: 'center',
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('3.4%'),
         marginTop: hp('5%'),
         textAlign: 'center',

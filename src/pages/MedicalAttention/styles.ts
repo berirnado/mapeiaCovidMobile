@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     },
     headerText: {
         marginTop: hp('2%'),
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('3.4%'),
         color: '#757070',
         marginLeft: wp('15%'),
@@ -37,7 +36,6 @@ const styles = StyleSheet.create({
     },
     titleText: {
         justifyContent: 'center',
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('3.4%'),
         marginTop: hp('5%')
     },
@@ -60,7 +58,6 @@ const styles = StyleSheet.create({
     tipItemText: {
         width: wp('90%'),
         marginTop: hp('4%'),
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('2.0%'),
     },
     tipesContainer: {
@@ -72,11 +69,9 @@ const styles = StyleSheet.create({
         marginTop: hp('3%'),
     },
     textBold: {
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('2.0%'),
     },
     textRegular: {
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('2.0%'),
     }
 })

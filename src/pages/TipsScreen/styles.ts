@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     },
     headerText: {
         marginTop: hp('2%'),
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('3.4%'),
         color: '#757070',
         marginLeft: wp('15%'),
@@ -47,7 +46,6 @@ const styles = StyleSheet.create({
     },
     titleText: {
         justifyContent: 'center',
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('3.4%'),
         marginTop: hp('5%')
     },
@@ -69,7 +67,6 @@ const styles = StyleSheet.create({
         height: hp('9%'),
     },
     tipsButtonText: {
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('2.4%'),
     }
 })

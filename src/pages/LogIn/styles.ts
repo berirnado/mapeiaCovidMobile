@@ -21,18 +21,15 @@ const styles = StyleSheet.create({
     },
 
     textGoBack: {
-        fontFamily: 'Archivo_400Regular',
         color: '#a8a8a8',
     },
 
     textSecondary:{
-        fontFamily: 'Archivo_400Regular',
         textAlign: 'center',
         color: '#a8a8a8',
     },
 
     textLink: {
-        fontFamily: 'Archivo_400Regular',
         textAlign: 'center',
         color: '#00c4fc',
     },
@@ -52,7 +49,6 @@ const styles = StyleSheet.create({
     },
 
     formTitle: {
-        fontFamily: 'Archivo_700Bold',
         fontSize: 22,
         textAlign: 'center'
     },
@@ -104,7 +100,6 @@ const styles = StyleSheet.create({
 
     saveDataText: {
         marginLeft: 5,
-        fontFamily: 'Archivo_400Regular',
         fontSize: 14,
         color: '#2b2b2b'
     },
@@ -119,7 +114,6 @@ const styles = StyleSheet.create({
     },
 
     buttonText: {
-        fontFamily: 'Archivo_700Bold',
         color: 'white',
         fontSize: 20,
         alignSelf: 'center',
