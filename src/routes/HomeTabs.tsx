@@ -22,7 +22,7 @@ function HomeTabs() {
         <Navigator
             tabBarOptions={{
                 style: {
-                    shadowOpactity: 2,
+                    shadowOpacity: 2,
                     height: 64,
                     position: 'absolute',
                     borderWidth: 1,
@@ -45,7 +45,6 @@ function HomeTabs() {
                     height: Platform.OS === 'ios' ? 24 : 20,
                 },
                 labelStyle: {
-                    fontFamily: 'Archivo_700Bold',
                     fontSize: 13,
                     marginTop: 4,
                 },

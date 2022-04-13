@@ -24,7 +24,7 @@ function AppStack() {
     return (
         <NavigationContainer>
             <Navigator screenOptions={{headerShown: false}}>
-                <Screen name="ThirdScreen" component={ThirdScreen} />
+                <Screen name="MapScreen" component={MapScreen} />
                 <Screen name="Landing" component={Landing} />
                 <Screen name="LogIn" component={LogIn} />
                 <Screen name="SignIn" component={SignIn} />
@@ -38,6 +38,7 @@ function AppStack() {
                 <Screen name="CuidadosAeP" component={CuidadosAeP} />
                 <Screen name="MedicalAttention" component={MedicalAttention} />
                 <Screen name="SecondScreen" component={SecondScreen} />
+                <Screen name="ThirdScreen" component={ThirdScreen} />
             </Navigator>
         </NavigationContainer>
     );

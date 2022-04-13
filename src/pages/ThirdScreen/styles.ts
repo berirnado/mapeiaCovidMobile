@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     },
     paragraphContainer: {
         width: wp('90%'),
-        padding: 8,
     },
 
     paragraph: {
@@ -25,7 +24,9 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     negrito: {
+        marginLeft: wp('-5%'),
         fontWeight: 'bold',
+        textAlign: 'center',
     },
     buttonContainer: {
         flexDirection: 'column',

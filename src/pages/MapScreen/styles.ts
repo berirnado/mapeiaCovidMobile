@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     },
     headerText: {
         marginTop: hp('2%'),
-        fontFamily: 'Archivo_400Regular',
         fontSize: hp('3.4%'),
         color: '#757070',
         marginLeft: wp('15%'),
@@ -60,7 +59,6 @@ const styles = StyleSheet.create({
     },
     checkContainerText: {
         marginTop: hp('2%'),
-        fontFamily: 'Archivo_700Bold',
         fontSize: hp('3.2%'),
     },
     checkContainerButtons: {
@@ -89,7 +87,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     buttonText: {
-        fontFamily: 'Archivo_700Bold',
         color: '#ffff',
         marginLeft: wp('2%'),
     },
