@@ -24,10 +24,10 @@ function AppStack() {
     return (
         <NavigationContainer>
             <Navigator screenOptions={{headerShown: false}}>
+                <Screen name="Landing" component={Landing} />
                 <Screen name="LogIn" component={LogIn} />
                 <Screen name="MapScreen" component={MapScreen} />
                 <Screen name="SignIn" component={SignIn} />
-                <Screen name="Landing" component={Landing} />
                 <Screen name="HomeTabs" component={HomeTabs} />
                 <Screen name="TipsScreen" component={TipsScreen} />
                 <Screen name="MaskTips" component={MaskTips} />
